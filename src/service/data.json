@@ -1,0 +1,242 @@
+[
+    {
+        "Cereal1": [
+            {
+                "month": "Janeiro",
+                "value": 100
+            },
+            {
+                "month": "Fevereiro",
+                "value": 480
+            },
+            {
+                "month": "Março",
+                "value": 400
+            },
+            {
+                "month": "Abril",
+                "value": 520
+            }
+        ]
+    },
+    {
+        "Cereal2": [
+            {
+                "month": "Janeiro",
+                "value": 200
+            },
+            {
+                "month": "Fevereiro",
+                "value": 320
+            },
+            {
+                "month": "Março",
+                "value": 130
+            },
+            {
+                "month": "Abril",
+                "value": 400
+            }
+        ]
+    },
+    {
+        "Cereal3": [
+            {
+                "month": "Janeiro",
+                "value": 180
+            },
+            {
+                "month": "Fevereiro",
+                "value": 400
+            },
+            {
+                "month": "Março",
+                "value": 250
+            },
+            {
+                "month": "Abril",
+                "value": 50
+            }
+        ]
+    },
+    {
+        "Fruta1": [
+            {
+                "month": "Janeiro",
+                "value": 250
+            },
+            {
+                "month": "Fevereiro",
+                "value": 180
+            },
+            {
+                "month": "Março",
+                "value": 300
+            },
+            {
+                "month": "Abril",
+                "value": 390
+            }
+        ]
+    },
+    {
+        "Fruta2": [
+            {
+                "month": "Janeiro",
+                "value": 150
+            },
+            {
+                "month": "Fevereiro",
+                "value": 250
+            },
+            {
+                "month": "Março",
+                "value": 100
+            },
+            {
+                "month": "Abril",
+                "value": 530
+            }
+        ]
+    },
+    {
+        "Fruta3": [
+            {
+                "month": "Janeiro",
+                "value": 280
+            },
+            {
+                "month": "Fevereiro",
+                "value": 400
+            },
+            {
+                "month": "Março",
+                "value": 430
+            },
+            {
+                "month": "Abril",
+                "value": 290
+            }
+        ]
+    },
+    {
+        "Calcado1": [
+            {
+                "month": "Janeiro",
+                "value": 140
+            },
+            {
+                "month": "Fevereiro",
+                "value": 530
+            },
+            {
+                "month": "Março",
+                "value": 150
+            },
+            {
+                "month": "Abril",
+                "value": 290
+            }
+        ]
+    },
+    {
+        "Calcado2": [
+            {
+                "month": "Janeiro",
+                "value": 390
+            },
+            {
+                "month": "Fevereiro",
+                "value": 510
+            },
+            {
+                "month": "Março",
+                "value": 250
+            },
+            {
+                "month": "Abril",
+                "value": 600
+            }
+        ]
+    },
+    {
+        "Calcado3": [
+            {
+                "month": "Janeiro",
+                "value": 430
+            },
+            {
+                "month": "Fevereiro",
+                "value": 250
+            },
+            {
+                "month": "Março",
+                "value": 160
+            },
+            {
+                "month": "Abril",
+                "value": 180
+            }
+        ]
+    },
+    {
+        "Camisa1": [
+            {
+                "month": "Janeiro",
+                "value": 390
+            },
+            {
+                "month": "Fevereiro",
+                "value": 130
+            },
+            {
+                "month": "Março",
+                "value": 300
+            },
+            {
+                "month": "Abril",
+                "value": 480
+            }
+        ]
+    },
+    {
+        "Camisa2": [
+            {
+                "month": "Janeiro",
+                "value": 290
+            },
+            {
+                "month": "Fevereiro",
+                "value": 100
+            },
+            {
+                "month": "Março",
+                "value": 420
+            },
+            {
+                "month": "Abril",
+                "value": 530
+            }
+        ]
+    },
+    {
+        "Camisa3": [
+            {
+                "month": "Janeiro",
+                "value": 100
+            },
+            {
+                "month": "Fevereiro",
+                "value": 300
+            },
+            {
+                "month": "Março",
+                "value": 350
+            },
+            {
+                "month": "Abril",
+                "value": 500
+            }
+        ]
+    }
+]
