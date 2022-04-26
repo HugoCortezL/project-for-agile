@@ -1,5 +1,6 @@
 import {useState, useEffect} from 'react';
 import customData from './service/data.json'
+import Chart from './Chart'
 
 function App() {
   const [category, setCategory] = useState('comida')
@@ -10,8 +11,17 @@ function App() {
   const [branch, setBranch] = useState('Cereal1')
   const [allBranchsFromProduct, setAllBranchsFromProduct] = useState(['Cereal1', 'Cereal2', 'Cereal3'])
 
-  const [data, setData] = useState('')
+  const [data, setData] = useState([])
 
+  const [settingForChart, setSettingForChart] = useState({
+    categories: ["Janeiro", "Fevereiro", "Março", "Abril"],
+    series: [
+      {
+        name: "Vendas",
+        data: [0,0,0,0]
+      }
+    ]
+  })
 
   function retriveData(branch){
     for(var i = 0;i < customData.length; i++){
@@ -76,13 +86,29 @@ function App() {
     setData(changeBranch.data)
     setBranch(changeBranch.branchs[0])
   }, [product])
-  
+
   useEffect(() => {
     setData(retriveData(branch))
   }, [branch])
+
+  useEffect(() => {
+    
+    setSettingForChart({
+      categories: data.map(item => item.month),
+      series: [
+        {
+          name: "Vendas",
+          data: data.map(item => item.value),
+        }
+      ]
+    })
+
+
+  }, [data])
   
   return (
     <div className="App">
+
       <select name="category" id="categories" onChange={(e) => setCategory(e.target.value)} value={category}>
         <option value="comida">
           Comida
@@ -110,25 +136,13 @@ function App() {
             </option>
           )
         }
-      </select>
+      </select>      
 
-
-
-      <ul>
-        {
-          data.map(data => 
-            <li key={data.month}>
-              {data.month}: {data.value}
-            </li>
-          )
-        }
-      </ul>
+      <Chart settings={settingForChart}/>
       
     </div>
   )
 }
 
 export default App
-/*
-
-*/
+//<Chart settings={settingForChart}/>
