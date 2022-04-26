@@ -1,7 +1,8 @@
 import {useState, useEffect} from 'react';
 import customData from './service/data.json'
 import Chart from './Chart'
-
+import Header from './Header'
+import {SelectContainer} from './Styles'
 function App() {
   const [category, setCategory] = useState('comida')
   
@@ -108,35 +109,47 @@ function App() {
   
   return (
     <div className="App">
+      <Header/>
+      <SelectContainer>
 
-      <select name="category" id="categories" onChange={(e) => setCategory(e.target.value)} value={category}>
-        <option value="comida">
-          Comida
-        </option>
-        <option value="roupa">
-          Roupa
-        </option>
-      </select>
+        <div>
+          <label>Categoria: </label>
+          <select name="category" id="categories" onChange={(e) => setCategory(e.target.value)} value={category}>
+            <option value="comida">
+              Comida
+            </option>
+            <option value="roupa">
+              Roupa
+            </option>
+          </select>
+        </div>
 
-      <select name="product" id="product" onChange={(e) => setProduct(e.target.value)} value={product}>
-        {
-          allProductsFromCategory.map(product => 
-            <option value={product} key={product}>
-              {product}
-            </option>
-          )
-        }
-      </select>
-      
-      <select name="branch" id="branch" onChange={(e) => setBranch(e.target.value)} value={branch}>
-        {
-          allBranchsFromProduct.map(branch => 
-            <option value={branch} key={branch}>
-              {branch}
-            </option>
-          )
-        }
-      </select>      
+        <div>
+          <label>Produto: </label>
+          <select name="product" id="product" onChange={(e) => setProduct(e.target.value)} value={product}>
+            {
+              allProductsFromCategory.map(product => 
+                <option value={product} key={product}>
+                  {product}
+                </option>
+              )
+            }
+          </select>
+        </div>
+        
+        <div>
+          <label>Marca: </label>
+          <select name="branch" id="branch" onChange={(e) => setBranch(e.target.value)} value={branch}>
+            {
+              allBranchsFromProduct.map(branch => 
+                <option value={branch} key={branch}>
+                  {branch}
+                </option>
+              )
+            }
+          </select>      
+        </div>
+      </SelectContainer>
 
       <Chart settings={settingForChart}/>
       
